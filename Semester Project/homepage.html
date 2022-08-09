@@ -1,0 +1,172 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <!--Caroline Seegmiller
+            11/11/2021
+            ITSE 1311.001
+            Semester Project-->
+        <meta charset="utf-8">
+        <meta name="description" content="Adobe Photoshop Portfolio">
+        <meta name="keywords" content="Photoshop, Edits, Adobe, Collin County Community College">
+        <title>Semester Project - Home</title>
+        <link rel="stylesheet" type="text/css" href="css/home.css">
+        <script>
+            // function to loop through photos in sequential order
+            var images = new Array ('images/1.jpg','images/2.jpg','images/3.jpg','images/4.jpg', 'images/5.jpg', 'images/6.jpg')
+            var image_count = 0;
+            function rollover (image_id, millisecs){
+                var image = document.getElementById(image_id);
+                image.src = images[image_count];
+                image_count++;
+                if (image_count >= images.length) {
+                    image_count = 0;
+                }
+                setTimeout("rollover('" + image_id + "'," + millisecs + ");",millisecs);
+            }
+            
+        </script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100;300;500&family=Quicksand:wght@300&family=Work+Sans:wght@200;300&display=swap');
+        </style>
+            
+    </head>
+    <body>
+        <div class="grid">
+            <!--section 1-->
+            <div class="sect1">
+            <header>
+                <h1>Photoshop Portfolio</h1>
+            </header>    
+            <nav>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="lab1.html">Lab 1</a></li>
+                    <li><a href="lab2.html">Lab 2</a></li>
+                    <li><a href="lab3.html">Lab 3</a></li>
+                    <li><a href="lab4.html">Lab 4</a></li>
+                    <li><a href="lab5.html">Lab 5</a></li>
+                    <li><a href="lab6.html">Lab 6</a></li>
+                </ul>
+            </nav>
+            </div>
+
+            <!--section 2-->
+            <article class="sect2">
+                <iframe width="400" height="400"
+                src="https://youtube.com/embed/gUc6giUUEQs">
+                </iframe>
+            <p>In the fall semester of 2021, I took ITSE-1301.000 which is a Computer/Web Programming course called Web Design Tools and Graphics. The Collin County Community College course was 100% online and taught by Dr. Jackie Jing-Fong Hsu. In the class I learned about the popular program Adobe Photoshop and how it can be used as a powerful tool to manipulate, adjust, and create images.</p>
+            <p>The purpose of this website is to show off the photo edits I’ve created throughout the semester and to document my growing progress as a Photoshop Pro. On this website you will find pages for each of my projects and information about their creation, including the steps I took to create them in case you would like to attempt to recreate any of them yourself. There is also a feedback form on this page where you are invited to leave your thoughts and comments regarding my work. <b><em>(Please note the form is not currently active). </em></b>I was 100% new to Photoshop before I took this class, but now I feel confident enough to make my own edits, so watch out Kylie Jenner! I’m coming for your Instagram followers! (just kidding)</p>
+            <p>If you would like to learn about how to use Photoshop, I strongly recommend signing up for this course at Collin County Community College. <b><a href="https://cougarweb.collin.edu/" target="_blank">Click this link</a></b> to register for the upcoming semester! 
+                Don’t forget to <b><a href="https://www.adobe.com/products/photoshop/landpa.html?sdid=KKQIN&mv=search&kw=photoshop&ef_id=CjwKCAiAvriMBhAuEiwA8Cs5lTjtxHknXzMp1pbU11c1qGdJfllsoF1btNz2KLt-7kqXVG__j2pfwxoCJDkQAvD_BwE:G:s&s_kwcid=AL!3085!3!522504775617!e!!g!!adobe%20photoshop!1712238394!67643541820&gclid=CjwKCAiAvriMBhAuEiwA8Cs5lTjtxHknXzMp1pbU11c1qGdJfllsoF1btNz2KLt-7kqXVG__j2pfwxoCJDkQAvD_BwE" target="_blank">click here</a></b> 
+                to download the Photoshop application from Adobe’s website. You’ll also need some textbooks to guide you as you start off your Photoshop journey, so <b><a href="https://www.adobepress.com/store/browse.asp?st=41876" target="_blank">click here</a></b> to check out some of the literature published by Adobe. 
+                There are also several great video tutorials on YouTube like the one embedded here that can help you learn new skills to take your editing abilities to the next level!</p>
+            </article>
+            
+            <!--section 3-->
+            <article class="sect3">
+                <h2>Photo Gallery</h2>
+                <figure><img class="center" id="rotator" src="images/1.jpg" alt="Photoshop edited images"><figcaption>Final edits from each lab</figcaption></figure>
+                <script>
+                    rollover("rotator",3000);
+                </script>
+            </article>
+
+            <!--section 4-->
+            <article class="sect4">
+                <div class="container">
+                    <h2>Feedback Form</h2>
+                    <form id="feedbackForm" action="feedback.php" method="post">
+                        
+                        <!--user info-->
+                        <div class="group">
+                        <label for="firstName">First Name: </label>
+                        <input type="text" id="firstName" name="firstName" required>
+                        <label for="lastName">Last Name: </label>
+                        <input type="text" id="lastName" name="lastName" required>
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email" required>
+                        </div><!--end group-->
+                
+                        <!--radio questions-->
+                        <div class="group">
+                        <h3>How would you rate the quality of the edits?<br>(1 = SUPER BAD, 5 = SUPER GOOD)</h3>
+                        <input type="radio" id="quality1" name="quality" value="1">
+                        <label for="quality1">1</label>
+                        <input type="radio" id="quality2" name="quality" value="2">
+                        <label for="quality2">2</label>
+                        <input type="radio" id="quality3" name="quality" value="3">
+                        <label for="quality3">3</label>
+                        <input type="radio" id="quality4" name="quality" value="4">
+                        <label for="quality4">4</label>
+                        <input type="radio" id="quality5" name="quality" value="5">
+                        <label for="quality5">5</label>
+                        </div><!--end group-->
+                
+                        <div class="group">
+                        <h3>How would you rate the creativity of the edits?<br>(1 = SUPER BAD, 5 = SUPER GOOD)</h3>
+                        <input type="radio" id="creativity1" name="creativity" value="1">
+                        <label for="creativity1">1</label>
+                        <input type="radio" id="creativity2" name="creativity" value="2">
+                        <label for="creativity2">2</label>
+                        <input type="radio" id="creativity3" name="creativity" value="3">
+                        <label for="creativity3">3</label>
+                        <input type="radio" id="creativity4" name="creativity" value="4">
+                        <label for="creativity4">4</label>
+                        <input type="radio" id="creativity5" name="creativity" value="5">
+                        <label for="creativity5">5</label>
+                        </div><!--end group-->
+                
+                        <!--favorite lab-->
+                        <div class="group">
+                        <h3>Which image was your favorite Photoshop lab?</h3>
+                        <select id="favorite" required>
+                            <option value="" disabled selected hidden>Select Lab</option>
+                            <option value="lab1">Lab 1</option>
+                            <option value="lab2">Lab 2</option>
+                            <option value="lab3">Lab 3</option>
+                            <option value="lab4">Lab 4</option>
+                            <option value="lab5">Lab 5</option>
+                            <option value="lab6">Lab 6</option>
+                        </select>
+                        </div><!--end group-->
+                
+                        <!--positive-->
+                        <div class="group">
+                        <h3>Please write any positive feedback here:</h3>
+                        <textarea id="positive" name="posFeedback"></textarea> 
+                        </div><!--end group-->
+                
+                        <!--positive-->
+                        <div class="group">
+                        <h3>Please write any constructive criticisms here:</h3>
+                        <textarea id="negative" name="negFeedback"></textarea> 
+                        </div><!--end group-->
+                
+                        <!--submit&reset buttons-->
+                        <div class="submit"> 
+                        <button type="reset">Clear</button> 
+                        <button type="submit">Enter</button> 
+                        </div> <!-- submit -->
+                
+                    </form>
+                </div> <!--end container-->
+                    
+            </article>
+
+            <!--section 5-->
+            <article class="sect5">
+                <figure><img class="authorpic" src="images/me.jpg" alt="photo of Caroline Seegmiller"></figure>
+                <h2>About The Artist</h2>
+                <p>Caroline Seegmiller is from Dallas, Texas and is currently living in Spain. Although Caroline has a successful career as an educator, she is currently expanding her skill set by taking computer programming and web development classes. She loves playing video games, reading books, and exploring new places.</p> 
+                <p>You can contact Caroline via email at <b><a href="mailto:cseegmiller1@collin.edu">cseegmiller1@collin.edu</a></b> or connect with her on <b><a href="https://www.linkedin.com/in/caroline-seegmiller/" target="_blank">LinkedIn</a></b>.</p>
+            </article>
+
+        </div>
+        <!--section 6-->
+        <footer class="sect6">
+            <p>Webmaster: C.Seegmiller<br>
+            Last Update: 11/12/21</p>
+        </footer>
+    </body>
+</html>

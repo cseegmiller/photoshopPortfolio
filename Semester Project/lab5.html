@@ -1,0 +1,78 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <!--Caroline Seegmiller
+            11/11/2021
+            ITSE 1311.001
+            Semester Project-->
+        <meta charset="utf-8">
+        <meta name="description" content="Adobe Photoshop Portfolio">
+        <meta name="keywords" content="Photoshop, Edits, Adobe, Collin County Community College">
+        <title>Semester Project - 5</title>
+        <link rel="stylesheet" type="text/css" href="css/lab56.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100;300;500&family=Quicksand:wght@300&family=Work+Sans:wght@200;300&display=swap');
+        </style>
+    </head>
+
+    <body>
+        <div class="grid">
+            <!--section 1-->
+            <div class="sect1">
+            <header>
+                <h1>Photoshop Portfolio</h1>
+            </header>    
+            <nav>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="lab1.html">Lab 1</a></li>
+                    <li><a href="lab2.html">Lab 2</a></li>
+                    <li><a href="lab3.html">Lab 3</a></li>
+                    <li><a href="lab4.html">Lab 4</a></li>
+                    <li><a href="lab5.html">Lab 5</a></li>
+                    <li><a href="lab6.html">Lab 6</a></li>
+                </ul>
+            </nav>
+            </div>
+
+            <!--section 2 explanation-->
+            <article class="sect2">
+                <h2>Explanation</h2>
+                <p>The objective of this lab was to create a poster using a photo, vectors, and text. The purpose of this exercise was to practice creating vectors, using text effects, and especially applying filters.</p>
+                <p>This project was by far one of the most difficult of the six, but also one of the most fun to make.  I was inspired by vaporwave aesthetics and I wanted to use this crazy photo of my fiance where he’s standing in one of his favorite poses based on an anime called Jojo’s Bizarre Adventures. In the original photo, he is standing on a large water fountain and I wanted to incorporate water into the poster which is why I have the water texture in the background. The most difficult part however, was creating the grid that faded into the water. I knew it was possible to create a grid and I knew it was possible to warp a vector and distort its shape, but getting the vector to look the way I wanted was a super frustrating endeavor that literally took me two hours to figure out. It took a lot of research in the textbook, watching photoshop tutorials, and trial and error to get the grid to look right. I’m a little embarrassed how long it took me to get the grid right, but to be fair it was the first time I’d ever done anything like that before and now that I know how to do it, it won’t take as long. The other details on the poster were easy and I had fun trying out different filters. The final product was super funny and my fiance promised to use it as an album cover if he ever decides to leave his medical career and become a soundcloud rapper.</p>
+            </article>
+
+            <!--section 3 steps-->
+            <article class="sect3">
+                <h2>Steps</h2>
+                <ol>
+                    <li>After I clicked “create new”, I set the width and height to 22x28" with a vertical orientation and I changed the resolution to 72ppi.</li>
+                    <li>I created a layer called Water and added a pattern from the water folder. I went to the adjustments panel and added +30 saturation to make the water a more vivid color. </li>
+                    <li>I added a layer called Grid and clicked the pen tool. I selected a gradient from the green folder for the fill color and made the stroke color empty. I drew a square.</li>
+                    <li>I clicked Filter>Tiles and converted the vector into a smart object. I chose 15 tiles with 1% offset. I clicked Edit>Perspective Wrap and altered the image.</li>
+                    <li>On the Water layer mask I used the gradient tool to blend the layer over the Grid layer. I used the brush tool to make small adjustments.</li>
+                    <li>I added a layer called Picture and inserted my photograph onto the workspace. I clicked Edit>Free Transform and I resized the photo so the subject took up a large portion of the poster.</li>
+                    <li>I clicked the object selection tool and made a new layer based on the selected object called Subject. I hid the Picture layer from view. </li>
+                    <li>I duplicated the Subject layer and called it Subject Shadow and clicked Edit>Fill and choose to fill with the color purple. I moved it under the Subject layer.</li>
+                    <li>I added a layer called Flower. I clicked Window>Shapes and I chose a vector from the flower folder. I changed the color fill to a yellow-purple gradient. I duplicated the layer and called it Flower Shadow. I changed the color to red and moved the layer behind Flower.</li>
+                    <li>I clicked the Horizontal Type Tool and wrote “OUT NOW!” I clicked the properties panel and changed the font to impact and the color to red and the size to 200pt. I clicked the FX options and chose Drop Shadow with 75% opacity, 53 angle, 15 distance, 100% spread, and 0 size. I added a Stroke FX with a 5px size on the inside.</li>
+                    <li>I clicked the Horizontal Type Tool and wrote out “GAMERS III” and I changed the font to Times New Roman and the color to purple. I clicked Wrap Text and chose Flag style with 75 blend and 45 horizontal distortion. I added Bevel, Inner shadow, and Stroke FX.</li>
+                    <li>I added a layer called Japanese font and I typed some words from google translate. I chose the simplified Jpan 150pt white color font. I added a drop shadow FX. </li>
+                    <li>I added a layer called Decor and used the pen tool to make a straight line. I made the stroke color yellow and made the width 50px. I converted to a smart object and chose the Grain filter from the filter gallery. I also applied this filter to the Flower layer.</li>
+                </ol>
+            </article>
+            
+            <!--section 4 images-->
+            <article class="sect4">
+                <h2>Lab 5</h2>
+                <figure><img class="center" src="images/5.JPG" alt="Final edit of Lab 5"><figcaption>Final Edit</figcaption></figure>
+            </article>
+
+        </div>
+        <!--sect 5 footer-->
+        <footer class="sect5">
+            <p>Webmaster: C.Seegmiller<br>
+            Last Update: 11/12/21</p>
+        </footer>
+    </body>
+</html>
